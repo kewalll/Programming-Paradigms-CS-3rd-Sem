@@ -1,0 +1,13 @@
+symptom(dev,weakness).
+symptom(dev,fever).
+symptom(dev,body_pain).
+symptom(dev,loss_of_apetite).
+symptom(ken,loss_of_taste).
+symptom(ken,cough).
+symptom(ken,fever).
+symptom(sam,headache).
+symptom(ram,sneezing).
+symptom(riya,sneezing).
+disease(Patient,dengue):-symptom(Patient,weakness),symptom(Patient,body_pain),symptom(Patient,loss_of_apetite),symptom(Patient,fever).
+disease(Patient,common_cold):-symptom(Patient,headache),symptom(Patient,sneezing),symptom(Patient,sore_throat).
+disease(Patient,covid):-symptom(Patient,loss_of_taste),symptom(Patient,cough),symptom(Patient,fever).
